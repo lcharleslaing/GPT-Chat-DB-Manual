@@ -1,0 +1,56 @@
+├── .env
+├── .env.development
+├── .env.local
+├── .env.production
+├── .gitignore
+├── .huskyrc
+├── .lintstagedrc
+├── .npmrc
+├── .prettierrc
+├── Prompt.md
+├── README.md
+├── _templates
+│   ├── generator
+│   │   ├── help
+│   │   │   └── index.ejs.t
+│   │   ├── new
+│   │   │   └── hello.ejs.t
+│   │   └── with-prompt
+│   │       ├── hello.ejs.t
+│   │       └── prompt.ejs.t
+│   └── init
+│       └── repo
+│           └── new-repo.ejs.t
+├── package-lock.json
+├── package.json
+├── postcss.config.cjs
+├── prisma
+│   └── schema.prisma
+├── src
+│   ├── apolloClient.js
+│   ├── app.html
+│   ├── app.postcss
+│   ├── assets
+│   │   └── manifest.template.json
+│   ├── global.d.ts
+│   ├── lib
+│   │   └── components
+│   │       └── DarkToggleButton.svelte
+│   ├── manifest.svelte
+│   ├── routes
+│   │   ├── +layout.svelte
+│   │   ├── +page.svelte
+│   │   └── env.json.js
+│   ├── stores
+│   │   └── theme.js
+│   └── supabaseClient.js
+├── static
+│   ├── favicon.png
+│   ├── manifest.webmanifest
+│   └── service-worker.js
+├── svelte.config.js
+├── tailwind.config.cjs
+├── tree.js
+├── tree.txt
+├── tsconfig.json
+└── vite.config.js

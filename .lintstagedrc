@@ -1,0 +1,10 @@
+{
+    "*.js": [
+        "eslint --fix",
+        "git add"
+    ],
+    "*.svelte": [
+        "eslint --plugin=svelte3 --fix",
+        "git add"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "src/node_modules/*",
+        "src/__tests__/*"
+    ],
+    "compilerOptions": {
+        "strict": true,
+        "moduleResolution": "node",
+        "target": "es2020",
+        "module": "es2020",
+        "lib": [
+            "es2020",
+            "DOM",
+            "WebWorker"
+        ],
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "importsNotUsedAsValues": "remove",
+        "isolatedModules": true
+    }
+}

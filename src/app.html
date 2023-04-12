@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<script type="module">
+		import manifest from '$app/manifest.js';
+		const manifestEl = document.createElement('link');
+		manifestEl.rel = 'manifest';
+		manifestEl.href = 'data:application/manifest+json,' + encodeURIComponent(JSON.stringify(manifest));
+		document.head.appendChild(manifestEl);
+	</script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
